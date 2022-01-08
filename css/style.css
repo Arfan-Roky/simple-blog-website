@@ -1,0 +1,52 @@
+/*  google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,800&family=Nunito:wght@300;400&display=swap');
+
+/* universel code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: white;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: black;
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
+nav{
+    margin-right: 3rem;
+}
+
+.navItem{
+    display: flex;
+    list-style: none;
+}
+
+.navList{
+    margin-left: 3.3rem;
+}
+
+.navList a {
+    color: #17e4c2;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.icon{
+    margin-right: 4px;
+}
