@@ -315,6 +315,10 @@ nav {
   font-size: 15px;
 }
 
+.black{
+  color: black;
+}
+
 table {
   width: 80%;
   margin: 0 auto;
