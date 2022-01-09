@@ -34,6 +34,9 @@ hr:after {
   top: -36px;
 }
 
+.blogHr:after {
+  content: 'Blog';
+}
 section {
   width: 100%;
   min-height: 100vh;
@@ -98,8 +101,8 @@ nav {
   transition: 200ms ease-in-out;
 }
 
-.navList a:hover{
-    color: violet;
+.navList a:hover {
+  color: violet;
 }
 
 .icon {
@@ -228,9 +231,56 @@ nav {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   padding: 4px 8px;
   border-bottom: 3px solid #17e4c2;
+  color: white;
 }
 
-.about-btn:hover{
-    background: transparent;
-    color: #17e4c2;
+.about-btn:hover {
+  background: transparent;
+  color: #17e4c2;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  background-color: #7d7de0;
+}
+
+.blog::before,
+.blog::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background-color: white;
+  transform: skewY(-5deg);
+}
+
+.box {
+  width: 400px;
+  height: 500px;
+  padding: 1rem;
+  z-index: 100;
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.blogImg {
+  width: 100%;
+}
+
+.blogDes {
+  padding-bottom: 1rem;
+  color: white;
+  font-size: 15px;
+}
+
+.blogBtn:hover {
+  background: transparent;
+  color: #17e4c2;
 }
