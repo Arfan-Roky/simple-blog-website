@@ -97,6 +97,10 @@ section {
   color: white;
 }
 
+.footerLeft >a:hover{
+  color: violet;
+}
+
 
 /* end of button and hover */
 
@@ -339,3 +343,87 @@ td{
   letter-spacing: 2px;
 }
 
+/* footer  */
+footer{
+  width: 100%;
+  background-color: #17e4c2;
+  text-align: center;
+  color: gray;
+}
+
+
+.footerFlex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.footerLeft > h2{
+  font-size: 2.1rem;
+  font-weight: 900;
+}
+
+.footerLeft > a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding: 0;
+  margin: 6px;
+  transition: color 200ms ease-in-out;
+}
+
+.footerContactList{
+  list-style: none;
+  margin: 6px 0;
+}
+
+.footerMiddle{
+  width: 10px;
+  height : 100px;
+  background: gray;
+  position:relative;
+}
+
+.ball{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.ball-1{
+  transform: translate(-20px,80px);
+  animation: ball-1 .7s  ease-in-out .5s infinite  alternate;
+  animation-play-state: running;
+
+}
+
+.ball-2{
+  transform: translate(10px);
+  animation: ball-2 .7s  ease-in-out .5s infinite  alternate;
+  animation-play-state: running;
+
+}
+
+@keyframes ball-1 {
+  0%{
+    background-color: lime;
+    top :0;
+  }
+  100%{
+    background-color: white;
+    top:-80px;
+  }
+}
+
+@keyframes ball-2 {
+  0%{
+    background-color: lime;
+    top :0;
+  }
+  100%{
+    background-color: white;
+    top:80px;
+  }
+}
