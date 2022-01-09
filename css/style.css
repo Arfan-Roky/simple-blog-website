@@ -38,11 +38,13 @@ hr:after {
   content: 'Blog';
 }
 
-.contactHr::after{
+.tableHr::after{
   content: "Table";
 }
 
-
+.contactHr::after{
+  content: "Contact";
+}
 
 section {
   width: 100%;
@@ -82,7 +84,7 @@ section {
   color: #17e4c2;
 }
 
-.contactBtn{
+.tableBtn{
   text-decoration: none;
   color: #17e4c2;
   border: 2px solid white;
@@ -92,7 +94,7 @@ section {
   transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
 }
 
-.contactBtn:hover{
+.tableBtn:hover{
   background-color: transparent;
   color: white;
 }
@@ -101,7 +103,10 @@ section {
   color: violet;
 }
 
-
+.contactBtn:hover{
+  background-color: transparent;
+  color: #17e4c2;
+}
 /* end of button and hover */
 
 h1,
@@ -426,4 +431,56 @@ footer{
     background-color: white;
     top:80px;
   }
+}
+
+/* contact form */
+.contact{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contactImg > img{
+  width: 100%;
+  border-left: 4px solid #17e4c2 ;
+}
+
+form{
+  width: 300px;
+  height: 400px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 1rem ;
+  border-bottom: 4px solid #17e4c2;
+}
+input{
+  margin: .9rem 0;
+  display: block;
+  outline: none;
+  border: none;
+  padding: 6px 0;
+  border-bottom: 2px solid #17e4c2;
+  cursor: pointer;
+}
+
+textarea{
+  border: none;
+  outline: none;
+  border: 2px solid #17e4c2;
+  display: block;
+}
+
+textarea::placeholder{
+  padding: 5px ;
+}
+.contactBtn{
+  outline: none;
+  border: none;
+  background-color: #17e4c2;
+  border: 2px solid #17e4c2;
+  display: inline-block;
+  margin-right: 2rem;
+  padding: 4px 8px ;
+  color: black;
+  transition: color 200ms ease-in-out;
+  border-radius: 2px;
 }
